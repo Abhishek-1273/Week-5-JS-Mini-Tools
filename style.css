@@ -1,0 +1,114 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: linear-gradient(skyblue, rgb(92, 160, 92));
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 60vh;
+    margin-bottom: 30px;
+}
+
+.box3 {
+    height: auto;
+}
+
+.project-1,
+.project-2,
+.project-3 {
+    display: flex;
+    justify-content: center;
+}
+
+.text {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 2px 2px grey;
+}
+
+#userinput1,
+#userinput2,
+#userinput3 {
+    height: 30px;
+    width: 300px;
+    padding: 3px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+::placeholder {
+    padding-left: 5px;
+    font-size: 18px;
+}
+
+button {
+    background-image: linear-gradient(orange, red);
+    color: white;
+    padding: 10px 35px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#output1,
+#output2,
+#output3 {
+    color: white;
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 23px;
+}
+
+@media only screen and (max-width:730px) {
+    .text {
+        font-size: 20px;
+    }
+
+    #userinput1,
+    #userinput2,
+    #userinput3 {
+        height: 20px;
+        width: 150px;
+        font-size: 10px;
+    }
+
+    ::placeholder {
+        font-size: 10px;
+    }
+
+    button {
+        padding: 5px 15px;
+    }
+
+    #output1,
+    #output2,
+    #output3 {
+        font-size: 10px;
+    }
+    .box{
+        height: 280px;
+    }
+
+    .box3 {
+        height: 280px;
+    }
+}
